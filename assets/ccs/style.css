@@ -13,6 +13,7 @@
             display: flex;
             align-items: center;
             justify-content: right;
+            height: 60px;
         }
 
         .navegador-principal >  .fa-bars{
@@ -45,6 +46,7 @@
             text-decoration: none;
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            align-items: center;
         }
 
         .navegador-principal > ul > li > ul{
@@ -54,8 +56,8 @@
             list-style-type: none;
             background-color: blueviolet;
             left: 15px;
-            padding-right: 10px;
             padding-left: 10px;
+            font-size: 20px;
         }
 
         @media(max-width:576px){
@@ -97,6 +99,7 @@
             justify-content: left;
             align-items: center;
             padding-left: 60px;
+            height: 300px;
         }
         @media(max-width:576px){
             .header-index{
@@ -139,7 +142,7 @@
         .body-index{
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            grid-template-rows: 70px 300px 2fr 110px;
+            grid-template-rows: 60x 300px 2fr 110px;
             grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal "
                                  "    header                header              header              header        "
                                  "     main                  main                main                aside         "
@@ -446,3 +449,7 @@
                 transform: translate(450px,0px);
             }
         }
+
+        /*Bootstraps Paginas How it Works y Plans and Menu*/
+
+
