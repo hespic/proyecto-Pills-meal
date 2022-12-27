@@ -464,3 +464,8 @@
             height:315px;
         }
         
+        .titulo-animation{
+            color: blueviolet;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 55px;
+        }
