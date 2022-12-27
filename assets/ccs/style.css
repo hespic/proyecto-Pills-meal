@@ -176,7 +176,7 @@
 
         footer{
             grid-area: footer;
-            background-color: rgb(27, 206, 234);
+            background-color: blueviolet;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -456,6 +456,11 @@
             background-color: rgba(5, 5, 5, 0.079);
         }
         .size-img{
-            height: 200px;
-            width: 200px;
+            height: 150px;
+            width: 150px;
         }
+        .video-pills{
+            width:560px;
+            height:315px;
+        }
+        
