@@ -506,4 +506,34 @@
             border-radius: 50%;
             width: 300px;
             align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.095);
+            z-index: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading i{
+            color: rgb(50, 47, 47);
+            font-size: 64px;
+            animation-name: rotate;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
         }
