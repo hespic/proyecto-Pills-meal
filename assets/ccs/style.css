@@ -6,91 +6,6 @@
 
 /*Navegador*/
 
-        .navegador-principal{
-            grid-area: navegador-principal;
-            background-color: blueviolet;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: right;
-            height: 60px;
-        }
-
-        .navegador-principal >  .fa-bars{
-            display: none;
-        }
-
-        .navegador-principal > ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: end;
-        }
-
-        .navegador-principal > ul > li {
-            position: relative;
-            background-color: blueviolet;
-            list-style: none;
-            color: white;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        .navegador-principal > ul > li:hover ul{
-            max-height: 300px;
-            transition: 0.5s;
-        }
-
-        .navegador-principal > ul > li > a{
-            display: block;
-            color: white;
-            padding: 18px;
-            text-decoration: none;
-            font-size: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            align-items: center;
-        }
-
-        .navegador-principal > ul > li > ul{
-            max-height: 0;
-            overflow: hidden;
-            position: absolute;
-            list-style-type: none;
-            background-color: blueviolet;
-            left: 15px;
-            padding-left: 10px;
-            font-size: 20px;
-        }
-
-        @media(max-width:576px){
-            .navegador-principal{
-                justify-content: space-between;
-            }
-            .navegador-principal >  .fa-bars{
-                display: block;
-                color: white;
-                font-size: 30px;
-                padding: 20px;
-            }
-            .navegador-principal > .fa-bars:hover + ul {
-                left: 0;
-            }
-
-            .navegador-principal > ul {
-                position: fixed;
-                flex-direction: column;
-                background-color: blueviolet;
-                width: 250px;
-                height: 100vh;
-                justify-content: start;
-                padding-top: 350px;
-                align-items: center;
-                left: -300px;
-                transition: 0,2s;
-            }    
-            .navegador-principal > ul:hover {
-                left: 0;
-            }
-            }
-
         .header-index{
             grid-area: header;
             background-image:url(../img/header\ appetie.jpg);
@@ -242,11 +157,14 @@
         }
         .tarjeta{
             width: 250px;
-            height: 410px;
-            padding: 12px;
+            padding: 10px;
             margin: 10px;
             background-color: beige;
-            border:solid;
+            border: 1px solid;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .tarjeta-imagen-producto{
@@ -286,7 +204,6 @@
             border-radius: 5px;
             background-color: rgba(50, 51, 52, 0.888);
             color: white;
-            width: 100px;
         }
 
         .tarjeta-como-funciona{
