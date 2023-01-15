@@ -1,0 +1,25 @@
+
+.grilla{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 200px;
+    gap: 10px;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+}        
+.cuadrante1{
+    background-color: magenta;
+
+}
+.cuadrante2{
+    background-color: blueviolet;
+}
+.cuadrante3{
+    background-color: yellowgreen;
+}
+.cuadrante4{
+    background-color: gray;
+}

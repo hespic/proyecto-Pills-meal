@@ -1,0 +1,30 @@
+
+.header-index{
+    grid-area: header;
+    background-image:url(../img/header\ appetie.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 60px;
+    height: 300px;
+}
+@media(max-width:576px){
+    .header-index{
+        height: 300px;
+    }
+}
+.header-info{
+    color: white;
+    font-size: 15px;
+    flex-wrap: wrap;
+    width: 650px;
+}
+@media(max-width:576px){
+    .header-info{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}    

@@ -1,0 +1,23 @@
+
+.body-index{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60x 300px 2fr 110px;
+    grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal "
+                         "    header                header              header              header        "
+                         "     main                  main                main                aside         "
+                         "    footer                footer              footer               footer        ";
+}        
+
+@media(max-width:576px){
+    .body-index{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 70px 300px auto auto 80px;
+        grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal "
+                             "    header                header              header              header        "
+                             "     main                  main                main                main         "
+                             "    aside                 aside               aside               aside         "
+                             "    footer                footer              footer               footer       ";
+    }           
+}
