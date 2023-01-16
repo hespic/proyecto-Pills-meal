@@ -1,19 +1,11 @@
-*{
-    padding: 10px;
-}
-
 @import "reset";
 @import "variables";
 @import "extend";
+@import "mixin";
+@import "estructura";
 @import "navegador";
 @import "tarjetas";
 @import "cajas";
 @import "buttons";
-@import "body";
-@import "grilla";
 @import "media";
-@import "header";
-@import "footer";
-@import "aside";
 @import "animaciones";
-

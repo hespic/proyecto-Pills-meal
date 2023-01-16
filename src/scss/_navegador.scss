@@ -1,4 +1,5 @@
 .navegador-principal{
+    grid-area: navegador-principal;
     background-color: blueviolet;
     position: relative;
     .fa-bars{
@@ -22,7 +23,7 @@
             left: -350px;
             width: 250px;
             height: 100vh;
-            background-color: $color-madre;
+            background-color: blueviolet;
             flex-direction: column;
             align-items: center;
             &:hover{

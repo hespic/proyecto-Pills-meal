@@ -5,20 +5,25 @@
 }
 
 h1{
-    color: $color-madre;
+    color: blueviolet;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
+    font: bolder;
+}
+
+.subtitulos-categoria{
+    color: blueviolet;
+    margin: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 00px;
 }
 
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }  
 
-main{
-    grid-area: main;
-}
-.color-titulo{
-    color: $color-madre;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+.parrafo-titulo{
+    padding-right: 60px;
 }

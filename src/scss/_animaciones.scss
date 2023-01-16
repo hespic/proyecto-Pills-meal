@@ -1,26 +1,29 @@
 .pill-violet{
     transition: 2s;
+    &:hover{
+        transform: scale(1.5);
+    }
 }
-.pill-violet:hover{
-    transform: scale(1.5);
-}
+
 .pill-yellow{
     transition: 2s;
-}
-.pill-yellow:hover{
-    transform: scale(1.5);
-}        
+    &:hover{
+        transform: scale(1.5);
+    }
+}  
+
 .pill-green{
     transition: 2s;
+    &:hover{
+        transform: scale(1.5);
+    }
 }
-.pill-green:hover{
-    transform: scale(1.5);
-}        
+        
 .pill-turquesa{
     transition: 2s;
-}
-.pill-turquesa:hover{
-    transform: scale(1.5);
+    &:hover{
+        transform: scale(1.5);
+    }
 }
 
 .loading{
@@ -32,13 +35,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.loading i{
-    color: rgb(50, 47, 47);
-    font-size: 64px;
-    animation-name: rotate;
-    animation-duration: .5s;
-    animation-iteration-count: infinite;
+    > i{
+        color: rgb(50, 47, 47);
+        font-size: 64px;
+        animation-name: rotate;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+    }
 }
 
 @keyframes rotate{

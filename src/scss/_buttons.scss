@@ -1,39 +1,13 @@
 
-
 .boton-ver-mas{
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: $color-madre;
-    color: white;
-    width: 100px;
-    box-shadow: $sombra-boton;
+    @include button(blueviolet,white);
 }
 .boton-de-comprar{
-    display: block;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(43, 186, 226, 0.732);
-    color: white;
-    width: 100px;
-    box-shadow: $sombra-boton;
+    @include button(rgba(43, 186, 226, 0.732),white)
 }
 .boton-visitar-sitio{
-    display: block;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(50, 51, 52, 0.888);
-    color: white;
-    width: 100px;
+    @include button-large(rgba(10, 10, 11, 0.759),white);
 }
-
 .boton-como-funciona{
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: $color-madre;
-    color: white;
-    box-shadow: $sombra-boton;
+    @include button(blueviolet,white);
 }

@@ -1,3 +1,4 @@
+
 .tarjeta{
     width: 250px;
     height: 410px;
@@ -14,10 +15,9 @@
 }
 
 .tarjeta-titulo{
+    @extend %tarjeta;
     background-color: aquamarine;
     color: black;
-    text-align: center;
-    font-size: 20px;
 }
 
 .tarjeta-descripcion{
@@ -40,15 +40,14 @@
 }
 
 .tarjeta-titulo-como{
+    @extend %tarjeta;
     background-color: aquamarine;
-    text-align: center;
-    font-size: 20px;
 }
 
 .tarjeta-p-como-funciona{
-    font-size: 15px;
-    text-align: center;
+    @extend %tarjeta;
 }
+
 .explanation{
     background-color: rgba(5, 5, 5, 0.079);
 }
