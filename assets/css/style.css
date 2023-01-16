@@ -1,10 +1,33 @@
 * {
+  padding: 10px;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Navegador*/
+h1 {
+  color: blueviolet;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+main {
+  grid-area: main;
+}
+
+.color-titulo {
+  color: blueviolet;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
 .navegador-principal {
   background-color: blueviolet;
   position: relative;
@@ -34,7 +57,7 @@
     left: -350px;
     width: 250px;
     height: 100vh;
-    background-color: blueviolet;
+    background-color: Blueviolet;
     flex-direction: column;
     align-items: center;
   }
@@ -48,155 +71,6 @@
   padding: 10px 20px;
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.header-index {
-  grid-area: header;
-  background-image: url(../img/header\ appetie.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-left: 60px;
-  height: 300px;
-}
-
-@media (max-width: 576px) {
-  .header-index {
-    height: 300px;
-  }
-}
-.header-info {
-  color: white;
-  font-size: 15px;
-  flex-wrap: wrap;
-  width: 650px;
-}
-
-@media (max-width: 576px) {
-  .header-info {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-.boton-ver-mas {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: blueviolet;
-  color: white;
-  width: 100px;
-}
-
-h1 {
-  color: blueviolet;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 40px;
-}
-
-p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/*Estructura del Body*/
-.body-index {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 60x 300px 2fr 110px;
-  grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal " "    header                header              header              header        " "     main                  main                main                aside         " "    footer                footer              footer               footer        ";
-}
-
-@media (max-width: 576px) {
-  .body-index {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 70px 300px auto auto 80px;
-    grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal " "    header                header              header              header        " "     main                  main                main                main         " "    aside                 aside               aside               aside         " "    footer                footer              footer               footer       ";
-  }
-}
-main {
-  grid-area: main;
-}
-
-aside {
-  grid-area: aside;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-footer {
-  grid-area: footer;
-  background-color: blueviolet;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 12px;
-  position: relative;
-  padding-top: 15px;
-  color: white;
-}
-
-.empresa-footer {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 12px;
-}
-
-.contactanos-footer {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.ayuda-footer {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/*Formulario*/
-table {
-  border: solid 1px;
-}
-
-th, td {
-  border: solid 1px;
-  padding: 5px;
-}
-
-/*General*/
-.fondodia {
-  background-color: pink;
-}
-
-.fondotexto {
-  background-color: gainsboro;
-  text-align: center;
-}
-
-.imagendefondo {
-  background-image: url(../img/header\ appetie.jpg);
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  top: 0;
-}
-
-.listadeproductos {
-  text-align: center;
-  color: blueviolet;
 }
 
 .tarjeta {
@@ -228,26 +102,6 @@ th, td {
   padding: 15px;
 }
 
-.boton-de-comprar {
-  display: block;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(43, 186, 226, 0.732);
-  color: white;
-  width: 100px;
-}
-
-.boton-visitar-sitio {
-  display: block;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(50, 51, 52, 0.888);
-  color: white;
-  width: 100px;
-}
-
 .tarjeta-como-funciona {
   width: 250px;
   height: 250px;
@@ -271,15 +125,16 @@ th, td {
   text-align: center;
 }
 
-.boton-como-funciona {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: blueviolet;
-  color: white;
+.explanation {
+  background-color: rgba(5, 5, 5, 0.079);
 }
 
-/*Caja de productos*/
+.tarjetapublicidad {
+  width: 100%;
+  height: 50%;
+  align-content: center;
+}
+
 .cajapadredeproductos {
   display: flex;
   justify-content: space-around;
@@ -326,7 +181,7 @@ th, td {
 }
 
 .subtitulos-categoria {
-  color: blueviolet;
+  color: Blueviolet;
   margin: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
@@ -334,13 +189,68 @@ th, td {
   padding-top: 0px;
 }
 
-.tarjetapublicidad {
-  width: 100%;
-  height: 50%;
-  align-content: center;
+.caja-plans {
+  width: 200x;
+  height: 100%;
+  background-image: linear-gradient(90deg, white 10%, gray, rgb(243, 236, 249));
 }
 
-/*Grilla*/
+.boton-ver-mas {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: Blueviolet;
+  color: white;
+  width: 100px;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+}
+
+.boton-de-comprar {
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(43, 186, 226, 0.732);
+  color: white;
+  width: 100px;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+}
+
+.boton-visitar-sitio {
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(50, 51, 52, 0.888);
+  color: white;
+  width: 100px;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+}
+
+.boton-como-funciona {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: Blueviolet;
+  color: white;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+}
+
+.body-index {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60x 300px 2fr 110px;
+  grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal " "    header                header              header              header        " "     main                  main                main                aside         " "    footer                footer              footer               footer        ";
+}
+
+@media (max-width: 576px) {
+  .body-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 300px auto auto 80px;
+    grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal " "    header                header              header              header        " "     main                  main                main                main         " "    aside                 aside               aside               aside         " "    footer                footer              footer               footer       ";
+  }
+}
 .grilla {
   display: grid;
   background-color: aqua;
@@ -353,84 +263,13 @@ th, td {
   align-items: stretch;
 }
 
-.cuadrante1 {
-  background-color: magenta;
-}
-
-.cuadrante2 {
-  background-color: blueviolet;
-}
-
-.cuadrante3 {
-  background-color: yellowgreen;
-}
-
-.cuadrante4 {
-  background-color: gray;
-}
-
-/*Animaciones*/
-.contenedor-circulo {
-  width: 100%;
-  height: 400px;
-  background-color: gray;
-  padding: 30px;
-}
-
-.circulo {
-  width: 100px;
-  height: 100px;
+.fotos-doctores {
   border-radius: 50%;
-  background-color: blueviolet;
-  margin: 10px;
-  animation-name: mover;
-  animation-duration: 10s;
-  animation-iteration-count: 3;
-  animation-delay: 2s;
-}
-
-@keyframes mover {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(500px, 0px) scale(1.2);
-    background-color: yellowgreen;
-  }
-  50% {
-    transform: translate(500px, 250px) scale(1);
-    background-color: turquoise;
-  }
-  75% {
-    transform: translate(0px, 250px) scale(1.6);
-    background-color: palevioletred;
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-}
-.circulo2 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: blueviolet;
-  margin: 10px;
-  animation-name: moverhorizontalmente;
-  animation-duration: 10s;
-  animation-timing-function: cubic-bezier(0, 0.9, 0.3, 1.12);
-}
-
-@keyframes moverhorizontalmente {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(450px, 0px);
-  }
-}
-/*Bootstraps Paginas How it Works y Plans and Menu*/
-.explanation {
-  background-color: rgba(5, 5, 5, 0.079);
+  width: 300px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .size-img {
@@ -448,16 +287,81 @@ th, td {
   height: 50%;
 }
 
-.color-titulo {
-  color: blueviolet;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 40px;
+.header-index {
+  grid-area: header;
+  background-image: url(../img/header\ appetie.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 60px;
+  height: 300px;
 }
 
-.caja-plans {
-  width: 200x;
-  height: 100%;
-  background-image: linear-gradient(90deg, white 10%, gray, rgb(243, 236, 249));
+@media (max-width: 576px) {
+  .header-index {
+    height: 300px;
+  }
+}
+.header-info {
+  color: white;
+  font-size: 15px;
+  flex-wrap: wrap;
+  width: 650px;
+}
+
+@media (max-width: 576px) {
+  .header-info {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+footer {
+  grid-area: footer;
+  background-color: Blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+  position: relative;
+  padding-top: 15px;
+  color: white;
+}
+
+.empresa-footer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+.contactanos-footer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.ayuda-footer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+aside {
+  grid-area: aside;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .pill-violet {
@@ -490,15 +394,6 @@ th, td {
 
 .pill-turquesa:hover {
   transform: scale(1.5);
-}
-
-.fotos-doctores {
-  border-radius: 50%;
-  width: 300px;
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .loading {

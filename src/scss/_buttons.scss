@@ -1,11 +1,11 @@
-
 .boton-ver-mas{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color: $color-madre;
     color: white;
     width: 100px;
+    box-shadow: $sombra-boton;
 }
 .boton-de-comprar{
     display: block;
@@ -15,6 +15,7 @@
     background-color: rgba(43, 186, 226, 0.732);
     color: white;
     width: 100px;
+    box-shadow: $sombra-boton;
 }
 .boton-visitar-sitio{
     display: block;
@@ -24,11 +25,13 @@
     background-color: rgba(50, 51, 52, 0.888);
     color: white;
     width: 100px;
+    box-shadow: $sombra-boton;
 }
 .boton-como-funciona{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color: $color-madre;
     color: white;
+    box-shadow: $sombra-boton;
 }
