@@ -3,7 +3,7 @@
     @include button(blueviolet,white);
 }
 .boton-de-comprar{
-    @include button(rgba(43, 186, 226, 0.732),white)
+    @include button-medium(rgba(43, 186, 226, 0.732),white)
 }
 .boton-visitar-sitio{
     @include button-large(rgba(10, 10, 11, 0.759),white);
