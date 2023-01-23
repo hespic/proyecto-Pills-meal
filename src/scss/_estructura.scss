@@ -2,7 +2,7 @@
 .body-index{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 60x 200px 2fr auto 110px;
+    grid-template-rows: 60x 200px 2fr auto 80px;
     grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal "
                          "    header                header              header              header        "
                          "     main                  main                main                main        "
@@ -61,7 +61,7 @@ aside{
 
 footer{
     grid-area: footer;
-    background-color: blueviolet;
+    background-color: rgba(47, 62, 70);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

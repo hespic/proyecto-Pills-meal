@@ -1,12 +1,12 @@
 
 .boton-ver-mas{
-    @include button(rgba(137, 43, 226, 0.46),white);
+    @include button(rgba(3, 102, 102),white);
     &:hover{
-        background-color: blueviolet;
+        background-color: rgba(103, 185, 154);
     }
 }
 .boton-de-comprar{
-    @include button-medium(rgba(43, 186, 226, 0.732),white)
+    @include button-medium(rgba(3, 102, 102),white)
 }
 .boton-visitar-sitio{
     @include button-large(rgba(10, 10, 11, 0.504),white);
@@ -15,8 +15,8 @@
     }
 }
 .boton-como-funciona{
-    @include button(rgba(137, 43, 226, 0.649),white);
+    @include button(rgba(3, 102, 102),white);
     &:hover{
-        background-color: blueviolet;
+        background-color: rgba(103, 185, 154);
     }
 }
