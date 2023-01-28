@@ -11,11 +11,10 @@
             @media(max-width:576px){
                 display: grid;
                 grid-template-columns: repeat(4,1fr);
-                grid-template-rows: 70px 200px auto auto 80px;
+                grid-template-rows: 70px 200px auto 80px;
                 grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal "
                                      "    header                header              header              header        "
                                      "     main                  main                main                main         "
-                                     "    aside                 aside               aside               aside         "
                                      "    footer                footer              footer               footer       ";
                         }           
             }
@@ -48,15 +47,6 @@
 
 main{
     grid-area: main;
-}
-
-aside{
-    grid-area: aside;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 footer{
