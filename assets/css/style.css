@@ -29,6 +29,19 @@ p {
   padding-right: 60px;
 }
 
+.aboutus {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+
+.ourstory {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  background-color: rgba(202, 210, 197, 0.303);
+}
+
 .tarjeta-p-como-funciona, .tarjeta-titulo-como, .tarjeta-titulo {
   font-size: 20px;
   text-align: center;
@@ -366,4 +379,8 @@ footer {
   100% {
     transform: rotateZ(360deg);
   }
+}
+.circulo-pill:hover {
+  transition: 1.5s;
+  transform: rotate(360deg);
 }

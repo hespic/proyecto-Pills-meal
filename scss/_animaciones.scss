@@ -53,3 +53,9 @@
     }
 }
 
+.circulo-pill{
+  &:hover{
+    transition: 1.5s;
+    transform: rotate(360deg);
+  }  
+}
